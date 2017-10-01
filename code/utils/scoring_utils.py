@@ -67,6 +67,7 @@ def intersection_over_union(y_true, y_pred):
         return intersection/union # + 1e-10
 
 
+    
 def score_run(gt_dir, pred_dir):
     gt_files = sorted(glob.glob(os.path.join(gt_dir, 'masks', '*.png')))
     pred_files = sorted(glob.glob(os.path.join(pred_dir, '*.png')))
