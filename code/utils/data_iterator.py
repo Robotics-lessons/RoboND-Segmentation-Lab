@@ -82,7 +82,6 @@ def shift_and_pad_augmentation(image, image_mask):
 
     return new_im, new_mask
 
-
 class BatchIteratorSimple(Iterator):
     def __init__(self, data_folder, batch_size, image_shape,
             num_classes=3, training=True, shuffle=True, seed=None, shift_aug=False):
